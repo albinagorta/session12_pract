@@ -136,7 +136,7 @@ public class ArticuloActivity extends AppCompatActivity {
 
                         ArrayList<String> lista=new ArrayList<>();
                         for(Articulo a:listaArticulos){
-                            lista.add("codigo: "+a.getCodigo()+" Nombre: "+a.getNombre()+" Desprecion: "+a.getDescripcion()+"\nMsrca: "+a.getMarca()+"Precio: "+a.getPrecio());
+                            lista.add("codigo: "+a.getCodigo()+" Nombre: "+a.getNombre()+" Descripcion: "+a.getDescripcion()+"\nMarca: "+a.getMarca()+" Precio: "+a.getPrecio());
                         }
 
                         ArrayAdapter adapter=new ArrayAdapter<>(getApplication(),android.R.layout.simple_list_item_1,lista);
@@ -172,7 +172,7 @@ public class ArticuloActivity extends AppCompatActivity {
 
                 ArrayList<String> lista=new ArrayList<>();
                 for(Articulo a:listaArticulos){
-                    lista.add("codigo: "+a.getCodigo()+" Nombre: "+a.getNombre()+" Desprecion: "+a.getDescripcion()+"\nMsrca: "+a.getMarca()+"Precio: "+a.getPrecio());
+                    lista.add("codigo: "+a.getCodigo()+" Nombre: "+a.getNombre()+" Descripcion: "+a.getDescripcion()+"\nMarca: "+a.getMarca()+" Precio: "+a.getPrecio());
                 }
                 ArrayAdapter<String> adapter=new ArrayAdapter<>(getApplication(),android.R.layout.simple_list_item_1,lista);
                 lvArticulos.setAdapter(adapter);
